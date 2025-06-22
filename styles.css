@@ -10,62 +10,19 @@ html {
   scroll-behavior: smooth;
 }
 
-.header-container {
-  display: flex;
+.header .container {
   justify-content: space-between;
-  align-items: center;
-  padding: 0 5%;
-  background: #2d2d2d;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  color: white;
 }
 
 .header {
-  text-align: center;
-  padding: 15px;
-  background: #2d2d2d;
+  text-align: left;
+  padding: 10px 0px;
   color: white;
   position: sticky;
+  background: #2d2d2d;
   top: 0;
   z-index: 100;
-}
-
-.header .logo {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
-.left .my-name {
-  color: white;
-  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
-}
-
-.right .nav-menu a {
-  font-size: 1rem;
-  cursor: pointer;
-  transition: color 0.2s;
-  color: white;
-  text-decoration: none;
-}
-.right i {
-  margin-right: 5px;
-}
-
-.right .nav-menu a:hover {
-  color: #007bff;
-}
-.left {
-  display: flex;
-  align-items: center;
-}
-
-.right .nav-menu {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 /* about */
@@ -141,7 +98,7 @@ html {
 
 /* skills */
 .skills {
-  padding: 8% 8%;
+  padding: 3% 8%;
   color: white;
   display: flex;
 }
@@ -160,8 +117,6 @@ html {
 
 .skills h2 {
   font-size: 40px;
-  padding: 0;
-  margin: 0;
 }
 .skills p {
   padding: 30px 0;
@@ -181,13 +136,13 @@ html {
   margin: 0;
 }
 .projects hr {
-  text-align: center;
   width: 150px;
+  margin: 16px auto;
 }
 .projects-container {
   display: flex;
   justify-content: space-between;
-  padding: 5% 8%;
+  padding: 3% 8%;
   align-items: stretch;
   flex-wrap: wrap;
 }
@@ -367,27 +322,10 @@ footer {
 }
 
 @media (max-width: 700px) {
-  .header-container,
   .about {
     flex-direction: column;
     align-items: flex-start;
     padding: 12px 8px;
-  }
-
-  .left {
-    margin-bottom: 12px;
-  }
-
-  .right .nav-menu {
-    gap: 12px;
-    width: 100%;
-    padding-left: 10%;
-  }
-
-  .right .nav-menu li {
-    /* width: 100%; */
-    padding: 8px 0;
-    text-align: left;
   }
 
   .skills .skills-background {

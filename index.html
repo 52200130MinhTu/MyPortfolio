@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Võ Minh Tú | Portfolio</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/arrow.png" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="contact.css" />
@@ -15,21 +16,31 @@
 
 <body>
     <header class="header">
-        <div class="header-container">
-            <div class="left">
-
-                <span class="my-name">Võ Minh Tú</span>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container">
+                <span class="navbar-brand my-name">Võ Minh Tú</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about"><i class="fa-solid fa-user"></i>
+                                About me</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#skills"><i class="fa-solid fa-code"></i>
+                                Skill</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#projects"><i
+                                    class="fa-solid fa-diagram-project"></i> Project</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience"><i
+                                    class="fa-solid fa-graduation-cap"></i> Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa-solid fa-envelope"></i>
+                                Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <nav class="right">
-                <ul class="nav-menu">
-                    <li><a href="#about"><i class="fa-solid fa-user"></i> About me</a></li>
-                    <li><a href="#skills"><i class="fa-solid fa-code"></i> Skill</a></li>
-                    <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i> Project</a></li>
-                    <li><a href="#experience"><i class="fa-solid fa-graduation-cap"></i> Experience</a></li>
-                    <li><a href="#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
 
     <div class="about" id="about">
@@ -52,17 +63,16 @@
     </div>
 
     <section class="skills" id="skills">
-        <div class="skills-content">
+        <div class="skills-content ps-0">
             <h2>My skills</h2>
             <hr>
-            <br>
-
-            <ul>
+            <ul class="mt-5">
                 <li>JavaScript, TypeScript, HTML, CSS</li>
                 <li>React, Node.js, Express</li>
                 <li>MySQL, MongoDB</li>
                 <li>Git, Docker, REST API</li>
             </ul>
+
             <p>My goal is to become a professional Fullstack with the ability to design, build and operate system
                 software
                 effects. I expect to participate in projects of scale and impact, and develop myself to ensure receiving
@@ -78,14 +88,14 @@
         <h2>Projects</h2>
         <hr>
         <div class="projects-container ">
-            <div class="card-container">
+            <div class="card-container mt-3">
                 <div class="card-content">
                     <div class="card-image-wrapper">
                         <div class="card-bg">
                             <img src="images/dev3.jpg" alt="dev">
                             <!-- <img src="images/dev2.jpg" alt="dev"> -->
                         </div>
-                        <h1 class="card-title">Manage student app</h1>
+                        <h1 class="card-title">Calculator web</h1>
 
                         <p class="card-description">
                             The IT Recruitment App is a web application built using ReactJS, React Router DOM,
@@ -112,14 +122,14 @@
                     </div>
                 </div>
             </div>
-            <div class="card-container">
+            <div class="card-container my-3">
                 <div class="card-content">
                     <div class="card-image-wrapper">
                         <div class="card-bg">
                             <img src="images/dev2.jpg" alt="dev">
                             <!-- <img src="images/dev2.jpg" alt="dev"> -->
                         </div>
-                        <h1 class="card-title">Manage student app</h1>
+                        <h1 class="card-title">Manage Tour App</h1>
 
                         <p class="card-description">
                             The IT Recruitment App is a web application built using ReactJS, React Router DOM,
@@ -146,7 +156,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-container">
+            <div class="card-container mt-3">
                 <div class="card-content">
                     <div class="card-image-wrapper">
                         <div class="card-bg">
@@ -205,7 +215,7 @@
                     <h3><i class="fa-solid fa-briefcase"></i>Experience</h3>
                     <p><strong>Công ty ABC</strong> – Fullstack Developer (2026 - Nay)</p>
                     <ul>
-                        <li>Phát triển hệ thống quản lý khách hàng b</li>
+                        <li>Phát triển hệ thống quản lý khách hàng</li>
                         <li>Tối ưu hiệu năng và giao diện người dùng</li>
                     </ul>
                 </div>
@@ -236,10 +246,11 @@
 
     </section>
 
-    <footer>
-        <p>© 2025 Võ Minh Tú. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2025 Võ Minh Tú. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
