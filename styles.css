@@ -6,6 +6,12 @@ body {
   background-color: #1f2020;
   color: white;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -36,7 +42,6 @@ html {
   width: 500px;
   height: auto;
   border-radius: 0 0 30% 0;
-  /* object-fit: cover; */
   filter: grayscale(40%);
 }
 
@@ -303,32 +308,38 @@ footer {
   color: white;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    padding: 10px 0;
+  }
   .about .avatar img {
-    width: 350px;
-    max-height: 500px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    filter: grayscale(40%);
+  }
+  .about .info {
+    padding: 0 5%;
+  }
+  .skills {
+    flex-direction: column;
+    padding: 5% 2%;
+  }
+  .skills .skills-background {
+    display: none;
   }
   .projects-container {
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
     padding: 5% 2%;
+    align-items: center;
   }
   .projects-container .card-container {
-    max-width: 350px;
-    width: 100%;
-    /* min-height: 300px; */
-  }
-}
-
-@media (max-width: 700px) {
-  .about {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 12px 8px;
-  }
-
-  .skills .skills-background {
-    display: none;
+    margin: 20px 0;
+    max-width: 90%;
+    width: 80%;
+    gap: 10px;
+    padding: 5% 2%;
   }
 }
